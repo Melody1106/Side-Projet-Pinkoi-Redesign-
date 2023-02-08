@@ -1,0 +1,132 @@
+@import "reset.css";
+@import "common.css"
+
+header {
+    width: 100%;
+}
+.g-header {
+    width: 100%;
+}
+
+.g-header .g-wrap {
+    max-width: 1200px;
+    min-width: 1000px;
+    background: beige;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.g-header .g-wrap .header-top {
+    padding-top: 20px;
+    position: relative;
+}
+
+.g-header .g-wrap .header-top a.logo {
+    display: inline-block;
+    width: 128px;
+    height: 44px;
+    margin-right: 36px;
+}
+.g-header .g-wrap .header-top a.logo svg {
+    width: 100%;
+    height: 100%;
+}
+.g-header .g-wrap .header-search {
+    display: inline-block;
+    width: 380px;
+    background-color: aquamarine;
+    vertical-align: top;
+    /*麥克風icon定位*/
+    position: relative;
+}
+.g-header .g-wrap .header-search form {
+    width: 100%;
+    font-size: 0%;
+}
+
+.g-header .g-wrap .header-search .searchword {
+    width: 310px;
+    height: 32px;
+    padding: 6px 32px 5px 14px;
+    box-sizing: border-box;
+    border: 1px solid #d3d3d5;
+    font-size: 14px;
+}
+.g-header .g-wrap .header-search .submitButton {
+    width: 70px;
+    height: 32px;
+    box-sizing: border-box;
+    background: #10567b;
+    color: #fff;
+    border: 0;
+}
+.g-header .g-wrap .header-search .keyword {
+    margin: 6px 0 0 0;
+}
+.g-header .g-wrap .header-search .keyword a {
+    color: #39393e;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.g-header .g-wrap .header-search .mico-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 4px;
+    right: 70px;
+}
+
+.g-header .g-wrap .header-right {
+    /*max-width:1200px 1200-550=450*/
+    width: calc(100% - 550px);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 14px;
+}
+
+.g-header .g-wrap .header-right .rightflex-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.g-header .header-right .rightflex-box a {
+    color: #39393e;
+    padding: 5px;
+}
+
+.g-header .header-right .rightflex-box .login-border {
+    border-radius: 3px;
+    border: 1px solid #39393e;
+    /*使用padding撐開.header-right的高*/
+    padding: 8px 10px;
+    
+}
+
+.g-header nav {
+    
+}
+.g-header .g-wrap .navigation {
+    position: relative;
+}
+
+.g-header .g-wrap .navigation-col9 {
+    background-color: lightpink;
+    display: inline-block;
+}
+
+.g-header ul .nav-space {
+    width: calc(1200px/9);
+}
+
+.g-header ul .nav-title{
+    float: left;
+    line-height: 20px;
+    padding: 14px 0 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*-------------------------------------*/
+
