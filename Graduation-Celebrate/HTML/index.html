@@ -30,7 +30,7 @@
         </header>
         <nav class="header__nav">
             <ul class="header__nav-list unstyle-list">
-                <li class="header__nav-items"> <a class="button" href="">活動辦法</a> </li>
+                <li class="header__nav-items current"> <a class="button" href="">活動辦法</a> </li>
                 <li class="header__nav-items"> <a class="button" href=""> 全台海選</a> </li>
                 <li class="header__nav-items"> <a class="button" href=""> TOP12決賽 </a> </li>
                 <li class="header__nav-items"> <a class="button" href=""> 制服辣秘辛 </a> </li>
@@ -42,7 +42,12 @@
     <div class="container">
         <div class="wrapper">
             <div class="intro">
-                <img src="/Img/p_title.png" alt="">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="/Img/p_title_m.png">
+                    <source media="(min-width: 960px)" srcset="/Img/p_title.png">
+                    <img src="/Img/p_title.png" alt="title">
+                </picture>
+            
                 <p>專屬高校生的青春印記<br>
                     第三屆畢業季高校制服大賞熱血開跑！<br>
                     網羅全台逾500所高中校園制服進行強烈的廝殺票選<br>
@@ -58,8 +63,8 @@
             <h2 class="block__title">
                 活動<br>時間
             </h2>
-            <div class="avatar">
-                <img src="" alt="">
+            <div class="avatar-1">
+                <img src="/Img/girl1.png" alt="girl1"> 
             </div>
             <div class="block__paragraph">
                 <ul class="block__paragraph-items unstyle-list">
@@ -73,18 +78,25 @@
             <h2 class="block__title">
                 賽程<br>說明
             </h2>
-            <div class="avatar">
-                <img src="" alt="">
-            </div>
             <div class="block__paragraph">
                 <ul class="unstyle-list">
                     <li><b>第一階段－全台海選：</b>請進入制服地圖活動頁面，登入FB帳號即可投票，每日每帳號可投20票，同項目不可重複投票。</li>
                     <li><b>第二階段－TOP12決賽(最佳人氣/最萌女校服/最鮮男校服)：</b>請進入 SETN.com 三立新聞網活動頁面，登入FB帳號即可投票，每小時每帳號可投6票，同項目不可重複投票。
                     </li>
                 </ul>
-                <div class="block__paragraph-img">
+                <!-- <div class="block__paragraph-img">
                     <img src="/Img/way_p.jpg" alt="">
-                </div>
+                </div> -->
+                <div>
+                <picture class="block__paragraph-img">
+                    <source media="(max-width: 768px)" srcset="/Img/way_mobile.jpg">
+                    <source media="(min-width: 960px)" srcset="/Img/way_p.jpg">
+                    <img src="/Img/way_p.jpg" alt="title">
+                </picture>
+            </div>
+            </div>
+            <div class="avatar-2">
+                <img src="/Img/girl2.png" alt="girl2">
             </div>
         </div>
         <div class="block">
@@ -121,27 +133,18 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="footer__banner">
             <div class="footer__brand">
-                <div class="footer__brand-title ">執行<br>單位</div>
+                <div class="footer__brand-title ">執行單位</div>
                 <div class="logo" style="background-image: url(/Img/f_um.png);"></div>
                 <div class="logo" style="background-image: url(/Img/f_setn.png);"></div>
                 <div class="logo" style="background-image: url(/Img/f_st.png);"></div>
-                <!-- <div class="logo" ><a href=""><img src="/Img/f_um.png" alt=""></a></div>
-                <div class="logo" ><a href=""> <img   src="/Img/f_setn.png" alt=""></a></div>
-                <div class="logo" ><a href=""><img  src="/Img/f_st.png" alt=""></a></div> -->
-        
-                <div class="footer__brand-title ">特別<br>感謝</div>
+               
+                <div class="footer__brand-title E">特別感謝</div>
                 <div class="logo" style="background-image: url(/Img/f_ga.png);"></div>
                 <div class="logo" style="background-image: url(/Img/f_swanky.png);"></div>
                 <div class="logo" style="background-image: url(/Img/f_aken.png);"></div>
-                <!-- <div class="logo" > <a href=""> <img src="/Img/f_ga.png" alt=""></a></div>
-                <div class="logo" > <a href=""><img src="/Img/f_swanky.png" alt=""></a></div>
-                <div class="logo" > <a href=""><img src="/Img/f_aken.png" alt=""></a></div> -->
             </div>
-        </div>
-        <div>
-            <hr>
+        <div class="line">
             <p>&copy; 016 Sanlih E-Television</p>
         </div>
     </footer>
